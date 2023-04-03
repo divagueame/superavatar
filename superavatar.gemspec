@@ -7,6 +7,6 @@ Gem::Specification.new do |s|
     s.email       = "martin.arce.teixeira@gmail.com"
     s.files       = ["lib/superavatar.rb"]
     s.homepage    =
-        "https://rubygems.org/gems/hola"
+        "https://github.com/divagueame/superavatar"
     s.license       = "MIT"
 end
