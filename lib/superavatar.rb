@@ -1,5 +1,5 @@
 class Superavatar
     def self.talk
-        puts "Talking init"
+      "Talking init"
     end
 end
