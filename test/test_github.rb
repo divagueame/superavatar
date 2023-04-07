@@ -1,5 +1,4 @@
 require 'minitest/autorun'
-require 'superavatar/sources/github'
 
 class SuperavatarSourcesGithubTest < Minitest::Test
   def test_profile_url
