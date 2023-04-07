@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    superavatar (0.0.0)
+    superavatar (0.0.1)
 
 GEM
   remote: https://rubygems.org/
