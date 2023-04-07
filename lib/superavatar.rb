@@ -1,8 +1,15 @@
-require 'json'
+# frozen_string_literal: true
+
+#
+# Superavatar
+
 require_relative 'sources/github'
 
+# Provides avatars for your users
+#
 module Superavatar
-    def self.talk
-      "Talking init"
-    end
+  # Tester method
+  def self.talk
+    'Talking init'
+  end
 end

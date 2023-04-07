@@ -1,7 +1,18 @@
+# frozen_string_literal: true
+
 require 'minitest/autorun'
 
 class SuperavatarSourcesGithubTest < Minitest::Test
-  def test_profile_url
-    assert_equal "https://github.com/divagueame/", Superavatar::Sources::Github.profile_url('divagueame')
+  def setup
+    mock_username = 'divagueame'
+    @test_user = Superavatar::Sources::Github.new(mock_username)
+  end
+
+  def test_web_profile_url
+    assert_equal 'https://github.com/divagueame/', @test_user.web_profile
+  end
+  
+  def test_api_profile
+    assert_equal "https://api.github.com/users/divagueame/", @test_user.api_profile
   end
 end

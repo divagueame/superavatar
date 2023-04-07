@@ -1,22 +1,25 @@
+# frozen_string_literal: true
 
 module Superavatar
   module Sources
     class Github
-
-      def avatar_url(username)
-        res = profile(username)
-        JSON.parse(res)[:avatar_url]
+      def initialize(username)
+        @username = username
       end
 
-      private
-      def self.profile_url(username)
-        "https://github.com/#{username}/"
+      def avatar_url
+        res = api_profile
+        p res
+        # JSON.parse(res)[:avatar_url]
       end
 
-      def profile(username)
-        "https://api.github.com/users/#{username}/"
+      def web_profile
+        "https://github.com/#{@username}/"
       end
 
+      def api_profile
+        "https://api.github.com/users/#{@username}/"
+      end
     end
   end
 end
