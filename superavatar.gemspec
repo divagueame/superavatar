@@ -7,7 +7,8 @@ Gem::Specification.new do |s|
   s.description = "A gem to get your users' backup avatar from public resources"
   s.authors     = ['Martin Arce']
   s.email       = 'martin.arce.teixeira@gmail.com'
-  s.files       = ['lib/superavatar.rb']
+ #s.files       = ['lib/superavatar.rb', 'lib/superavatar/sources/github.rb']
+  s.files       = Dir['lib/**/*.rb']
   s.homepage    =
     'https://github.com/divagueame/superavatar'
   s.license = 'MIT'
