@@ -9,10 +9,11 @@ module Superavatar
       end
 
       def get_avatar_url
-        return @avatar_url if !@avatar_url.nil?
+        return @avatar_url unless @avatar_url.nil?
+
         url = api_profile_endpoint
         github_res = Superavatar::Utils::Apiclient.fetch_external_api(url)
-        @avatar_url = github_res.fetch("avatar_url")
+        @avatar_url = github_res.fetch('avatar_url')
       end
 
       def web_profile
