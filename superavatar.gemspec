@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = 'superavatar'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.summary     = "Your app has users but no avatar. Let's fix that"
   s.description = "A gem to get your users' backup avatar from public resources"
   s.authors     = ['Martin Arce']

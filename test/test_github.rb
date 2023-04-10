@@ -13,6 +13,6 @@ class SuperavatarSourcesGithubTest < Minitest::Test
   end
   
   def test_api_profile
-    assert_equal "https://api.github.com/users/divagueame/", @test_user.api_profile
+    assert_equal "https://api.github.com/users/divagueame", @test_user.api_profile_endpoint
   end
 end
