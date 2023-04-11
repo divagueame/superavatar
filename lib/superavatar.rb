@@ -1,14 +1,20 @@
 # frozen_string_literal: true
 
 #
-# Superavatar
-
-# Provides avatars for your users
+# Superavatar gem entrypoint
 #
 module Superavatar
   require 'superavatar/configuration'
-  require 'superavatar/sources/github'
   require 'superavatar/utils/apiclient'
+
+  ## External sources
+  require 'superavatar/sources/github'
+
+  ## Local sources
+  require 'superavatar/local_sources/base'
+  require 'superavatar/local_sources/dice_bear'
+
+  ## Main class
   require 'superavatar/avatar'
 
   def self.configure
